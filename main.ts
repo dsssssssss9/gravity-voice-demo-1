@@ -1,5 +1,5 @@
 voiceRecognition.init()
-voiceRecognition.setVolume(4)
+voiceRecognition.setVolume(6)
 voiceRecognition.setMuteMode(voiceRecognition.MUTE.OFF)
 voiceRecognition.setWakeTime(20)
 serial.writeLine("" + (voiceRecognition.getWakeTime()))
