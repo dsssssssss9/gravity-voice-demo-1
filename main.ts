@@ -5,7 +5,7 @@ input.onButtonPressed(Button.B, function () {
     pins.digitalWritePin(DigitalPin.P8, 0)
 })
 voiceRecognition.init()
-voiceRecognition.setVolume(6)
+voiceRecognition.setVolume(7)
 voiceRecognition.setMuteMode(voiceRecognition.MUTE.OFF)
 voiceRecognition.setWakeTime(20)
 serial.writeLine("" + (voiceRecognition.getWakeTime()))
@@ -28,7 +28,7 @@ basic.forever(function () {
             music.play(music.stringPlayable("C5 B A G F E D C ", 240), music.PlaybackMode.UntilDone)
         }
         if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W75)) {
-            servos.P2.run(50)
+            servos.P2.run(25)
         }
         if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W76)) {
             servos.P2.stop()
