@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "voiceRecognition": "github:DFRobot/pxt-DFRobot_voiceRecognition#v0.0.5"
+        "voiceRecognition": "github:DFRobot/pxt-DFRobot_voiceRecognition#v0.0.5",
+        "servo": "*"
     },
     "files": [
         "main.blocks",
