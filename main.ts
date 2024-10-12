@@ -24,15 +24,6 @@ basic.forever(function () {
         if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W64)) {
             basic.showIcon(IconNames.Heart)
         }
-        if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W92)) {
-            music.play(music.stringPlayable("C5 B A G F E D C ", 240), music.PlaybackMode.UntilDone)
-        }
-        if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W75)) {
-            servos.P2.run(25)
-        }
-        if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W76)) {
-            servos.P2.stop()
-        }
         if (voiceRecognition.readCMDID() == voiceRecognition.checkWord3(voiceRecognition.FixedCommandWords.W103)) {
             pins.digitalWritePin(DigitalPin.P8, 1)
         }
